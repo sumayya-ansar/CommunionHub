@@ -10,7 +10,7 @@ const Home = () => {
         
         <div className="text-center md:text-left md:w-1/2">
           <motion.h1
-            className="text-5xl font-bold text-[#3D2C2A]"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#3D2C2A] mt-12 sm:mt-16 md:mt-20 mb-6 sm:mb-8 text-center"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -60,25 +60,27 @@ const Home = () => {
 
       
       <div className="w-full text-center py-16 bg-[#EAD4B9] rounded-xl shadow-md">
-        <h2 className="text-3xl font-bold text-[#3D2C2A]">How It Works</h2>
-        <p className="text-lg text-[#7A4B2B] mt-4 max-w-2xl mx-auto">
-          Discover events, join causes, and connect with like-minded people in your community.
-        </p>
-        <div className="flex justify-center gap-10 mt-6">
-          <div className="p-4 bg-white shadow-lg rounded-lg">
-            <h3 className="font-semibold text-[#3D2C2A]">📅 Browse Events</h3>
-            <p className="text-sm text-[#7A4B2B]">Find events that match your interests.</p>
-          </div>
-          <div className="p-4 bg-white shadow-lg rounded-lg">
-            <h3 className="font-semibold text-[#3D2C2A]">🤝 Connect</h3>
-            <p className="text-sm text-[#7A4B2B]">Meet people and expand your network.</p>
-          </div>
-          <div className="p-4 bg-white shadow-lg rounded-lg">
-            <h3 className="font-semibold text-[#3D2C2A]">🚀 Get Involved</h3>
-            <p className="text-sm text-[#7A4B2B]">Support causes and make an impact.</p>
-          </div>
-        </div>
-      </div>
+  <h2 className="text-3xl font-bold text-[#3D2C2A]">How It Works</h2>
+  <p className="text-lg text-[#7A4B2B] mt-4 max-w-2xl mx-auto">
+    Discover events, join causes, and connect with like-minded people in your community.
+  </p>
+  
+  <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-6">
+    <div className="p-4 bg-white shadow-lg rounded-lg max-w-xs w-full">
+      <h3 className="font-semibold text-[#3D2C2A]">📅 Browse Events</h3>
+      <p className="text-sm text-[#7A4B2B]">Find events that match your interests.</p>
+    </div>
+    <div className="p-4 bg-white shadow-lg rounded-lg max-w-xs w-full">
+      <h3 className="font-semibold text-[#3D2C2A]">🤝 Connect</h3>
+      <p className="text-sm text-[#7A4B2B]">Meet people and expand your network.</p>
+    </div>
+    <div className="p-4 bg-white shadow-lg rounded-lg max-w-xs w-full">
+      <h3 className="font-semibold text-[#3D2C2A]">🚀 Get Involved</h3>
+      <p className="text-sm text-[#7A4B2B]">Support causes and make an impact.</p>
+    </div>
+  </div>
+</div>
+
 
       
       <div className="w-full py-16 text-center">
